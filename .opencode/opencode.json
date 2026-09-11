@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "namecheap": {
+      "type": "remote",
+      "url": "https://mcp.namecheap.com/mcp",
+      "enabled": true
+    }
+  }
+}

@@ -1506,7 +1506,7 @@ h3 {
 /* line 84, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .my_img {
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 0;
   width: 500px;
 }

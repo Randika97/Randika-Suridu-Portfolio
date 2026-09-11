@@ -83,9 +83,9 @@
         }
         .my_img{
             position: absolute;
-            right: 0;
+            right: -50px;
             bottom: 0;
-            width: 487px;
+            width: 500px;
             @media #{$mid_device} {
                 width: 290px;
             }

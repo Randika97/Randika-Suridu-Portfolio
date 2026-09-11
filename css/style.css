@@ -1315,7 +1315,7 @@ h3 {
 
 .slider_area .single_slider .my_img {
   position: absolute;
-  right: -100px;
+  right: 0;
   bottom: 0;
   width: 500px;
 }
@@ -1328,8 +1328,7 @@ h3 {
 
 .slider_area .single_slider .my_img img {
   width: 500px;
-  height: 1000px;
-  object-fit: cover;
+  height: auto;
 }
 
 .about_info_area {

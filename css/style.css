@@ -1506,8 +1506,10 @@ h3 {
 /* line 84, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .my_img {
   position: absolute;
-  right: 0;
+  right: 5%;
   bottom: 0;
+  width: 380px;
+  max-width: 32%;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

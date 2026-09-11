@@ -1263,7 +1263,6 @@ h3 {
 .slider_area .single_slider .slider_text h1 {
   font-family: "Roboto", sans-serif;
   font-size: 80px;
-  text-transform: capitalize;
   font-weight: 300;
   line-height: 90px;
   color: #fff;
@@ -1840,6 +1839,19 @@ h3 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   line-height: 68px;
+}
+
+.testimonial_area .single_testmonial .testmonial_author .rec-original {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #DB9A64;
+  font-family: "Roboto", sans-serif;
+}
+
+.testimonial_area .single_testmonial .testmonial_author .rec-original:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .testimonial_area .single_testmonial .testmonial_author h3 {

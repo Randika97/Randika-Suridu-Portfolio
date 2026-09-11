@@ -55,6 +55,17 @@
                     line-height: 68px;
                 }
             }
+            .rec-original{
+                display: inline-block;
+                margin-top: 6px;
+                font-size: 13px;
+                color: #DB9A64;
+                font-family: $font2;
+                &:hover{
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
             h3{
                 color: #fff;
                 font-size: 24px;

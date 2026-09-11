@@ -83,10 +83,8 @@
         }
         .my_img{
             position: absolute;
-            right: 5%;
+            right: 0;
             bottom: 0;
-            width: 380px;
-            max-width: 32%;
             @media #{$mid_device} {
                 width: 290px;
             }

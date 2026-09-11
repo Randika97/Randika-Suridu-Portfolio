@@ -1259,7 +1259,8 @@ h3 {
   }
 }
 
-.slider_area .single_slider .slider_text h3 {
+.slider_area .single_slider .slider_text h3,
+.slider_area .single_slider .slider_text h1 {
   font-family: "Roboto", sans-serif;
   font-size: 80px;
   text-transform: capitalize;
@@ -1269,12 +1270,14 @@ h3 {
   margin-bottom: 55px;
 }
 
-.slider_area .single_slider .slider_text h3 span {
+.slider_area .single_slider .slider_text h3 span,
+.slider_area .single_slider .slider_text h1 span {
   color: #DB9A64;
 }
 
 @media (max-width: 767px) {
-  .slider_area .single_slider .slider_text h3 {
+  .slider_area .single_slider .slider_text h3,
+.slider_area .single_slider .slider_text h1 {
     font-size: 30px;
     margin-bottom: 30px;
     line-height: 45px;
@@ -1282,13 +1285,15 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .slider_area .single_slider .slider_text h3 {
+  .slider_area .single_slider .slider_text h3,
+.slider_area .single_slider .slider_text h1 {
     font-size: 54px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .slider_area .single_slider .slider_text h3 {
+  .slider_area .single_slider .slider_text h3,
+.slider_area .single_slider .slider_text h1 {
     font-size: 70px;
   }
 }
@@ -2488,18 +2493,21 @@ h3 {
   }
 }
 
-.bradcam_area.bradcam_area2 h3 {
+.bradcam_area.bradcam_area2 h3,
+.bradcam_area.bradcam_area2 h1 {
   font-size: 46px;
   font-weight: 400;
 }
 
 @media (max-width: 767px) {
-  .bradcam_area.bradcam_area2 h3 {
+  .bradcam_area.bradcam_area2 h3,
+.bradcam_area.bradcam_area2 h1 {
     font-size: 30px;
   }
 }
 
-.bradcam_area h3 {
+.bradcam_area h3,
+.bradcam_area h1 {
   font-size: 80px;
   color: #fff;
   font-weight: 300;
@@ -2508,7 +2516,8 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  .bradcam_area h3 {
+  .bradcam_area h3,
+.bradcam_area h1 {
     font-size: 30px;
   }
 }

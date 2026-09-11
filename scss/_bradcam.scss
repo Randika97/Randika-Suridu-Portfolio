@@ -33,7 +33,7 @@
             height: 400px;
             padding-bottom: 0;
         }
-        h3{
+        h3, h1{
             font-size: 46px;
             font-weight: 400;
             @media #{$mobile_device}{
@@ -41,7 +41,7 @@
             }
         }
     }
-    h3{
+    h3, h1{
         font-size: 80px;
         color:#fff;
         font-weight: 300;

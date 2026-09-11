@@ -55,28 +55,33 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
-                $(form).ajaxSubmit({
-                    type:"POST",
-                    data: $(form).serialize(),
-                    url:"contact_process.php",
+                var $form = $(form);
+                var $btn = $form.find('button[type="submit"]');
+                var originalText = $btn.text();
+                $form.find('.form-status').remove();
+                $btn.prop('disabled', true).text('Sending...');
+                $.ajax({
+                    type: "POST",
+                    url: "/api/contact",
+                    contentType: "application/json",
+                    data: JSON.stringify({
+                        name: $form.find('#name').val(),
+                        email: $form.find('#email').val(),
+                        subject: $form.find('#subject').val(),
+                        message: $form.find('#message').val()
+                    }),
                     success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor','default');
-                            $('#success').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#success').modal('show');
-                        })
+                        $btn.text('Message Sent');
+                        $form[0].reset();
+                        $('<div class="form-status alert alert-success mt-3" role="alert">Thank you! Your message has been sent. I will get back to you soon.</div>').insertAfter($btn.closest('.form-group'));
                     },
-                    error: function() {
-                        $('#contactForm').fadeTo( "slow", 1, function() {
-                            $('#error').fadeIn()
-                            $('.modal').modal('hide');
-		                	$('#error').modal('show');
-                        })
+                    error: function(xhr) {
+                        $btn.prop('disabled', false).text(originalText);
+                        var msg = "Something went wrong. Please try again later.";
+                        try { msg = JSON.parse(xhr.responseText).error || msg; } catch (e) {}
+                        $('<div class="form-status alert alert-danger mt-3" role="alert"></div>').text(msg).insertAfter($btn.closest('.form-group'));
                     }
-                })
+                });
             }
         })
     })

@@ -2707,12 +2707,15 @@ h3 {
 /* line 43, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_footer.scss */
 .footer .footer_top .single_links {
   border: 1px solid #7A5444;
+  border-radius: 14px;
   padding: 25px 30px;
   cursor: pointer;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.22));
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 -3px 6px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 767px) {
@@ -2755,6 +2758,13 @@ h3 {
   background: #CCAD85;
   border: 1px solid #CCAD85;
   color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.footer .footer_top .single_links:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* line 71, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_footer.scss */

@@ -85,11 +85,14 @@
             position: absolute;
             right: 0;
             bottom: 0;
+            width: 487px;
             @media #{$mid_device} {
                 width: 290px;
             }
             img{
-                width: 100%;
+                width: 487px;
+                height: 800px;
+                object-fit: cover;
             }
         }
     } 

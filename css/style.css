@@ -1508,6 +1508,7 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 487px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1519,7 +1520,9 @@ h3 {
 
 /* line 91, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .my_img img {
-  width: 100%;
+  width: 487px;
+  height: 800px;
+  object-fit: cover;
 }
 
 /* line 2, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_about.scss */

@@ -45,6 +45,15 @@
                     border-radius: 50%;
                     object-fit: cover;
                 }
+                &.initials{
+                    background: #DB9A64;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: $font2;
+                    text-align: center;
+                    line-height: 68px;
+                }
             }
             h3{
                 color: #fff;

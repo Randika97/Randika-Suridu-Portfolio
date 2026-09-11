@@ -1832,6 +1832,16 @@ h3 {
   object-fit: cover;
 }
 
+.testimonial_area .single_testmonial .testmonial_author .thumb.initials {
+  background: #DB9A64;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 68px;
+}
+
 .testimonial_area .single_testmonial .testmonial_author h3 {
   color: #fff;
   font-size: 24px;

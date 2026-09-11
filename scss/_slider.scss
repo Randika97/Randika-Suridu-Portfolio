@@ -85,13 +85,19 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 500px;
+            height: 680px;
             @media #{$mid_device} {
-                width: 290px;
+                width: 320px;
+                height: auto;
             }
             img{
-                width: 500px;
-                height: auto;
+                height: 100%;
+                width: auto;
+                max-width: none;
+                @media #{$mid_device} {
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
     } 

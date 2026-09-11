@@ -1317,18 +1317,27 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 500px;
+  height: 680px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .slider_area .single_slider .my_img {
-    width: 290px;
+    width: 320px;
+    height: auto;
   }
 }
 
 .slider_area .single_slider .my_img img {
-  width: 500px;
-  height: auto;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .slider_area .single_slider .my_img img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .about_info_area {

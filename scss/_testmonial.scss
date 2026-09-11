@@ -38,6 +38,13 @@
                 height: 68px;
                 @include border-radius(50%);
                 float: left;
+                overflow: hidden;
+                img{
+                    width: 68px;
+                    height: 68px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
             }
             h3{
                 color: #fff;
